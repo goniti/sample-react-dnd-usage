@@ -1,4 +1,6 @@
 .gallery__wrapper {
-    width: 400;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }

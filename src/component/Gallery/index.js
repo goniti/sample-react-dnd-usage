@@ -1,17 +1,15 @@
 import { Picture } from "../Picture";
 import "./gallery.css";
 
-const Gallery = (data, handleMove) => {
+const Gallery = (pictures) => {
   return (
     <div className="gallery__wrapper">
-      {data.data.map((card, index) => (
+      {pictures.pictures.map((picture) => (
         <Picture
-          key={card.id}
-          index={index}
-          id={card.id}
-          imgSrc={card.src}
-          alt={card.alt}
-          movePicture={handleMove}
+          key={picture.id}
+          id={picture.id}
+          imgSrc={picture.src}
+          imgAlt={picture.alt}
         />
       ))}
     </div>
